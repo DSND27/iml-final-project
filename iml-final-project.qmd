@@ -162,7 +162,13 @@ numeric_cols.worst <- sapply(FNA_sub.worst, is.numeric)
 corrplot(cor(FNA_sub.worst[,numeric_cols.worst]), method = "circle")
 ```
 
+#EDA ideas - Anthony - Testing how to use GitHub and add to the project 
 
+```{r}
+ggplot(FNA, aes(x=radius_mean, fill=diagnosis)) +
+  geom_density(alpha = 0.5)
+#showing the clear separation between benign and malignant tumors
+```
 
 ## Part B
 
